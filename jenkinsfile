@@ -10,7 +10,7 @@ pipeline{
 		       stage ('build stage'){
 		           steps{
 			        
-				sh '$ (MVNHOME)/bin/mvn clean install '
+				bat'$ (MVNHOME)/bin/mvn clean install '
 				}
 				}
 				}
