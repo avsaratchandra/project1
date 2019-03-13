@@ -13,11 +13,7 @@ pipeline{
 				bat'mvn clean install '
 				}
 				}
-		        stage ('mail notification'){
-			    steps{
-			         mail bcc: '', body: '', cc: 'build is unstable', from: '', replyTo: '', subject: 'build failure at staging point', to: 'schandra19993@gmail.com'
-				 }
-				 }
+		       
 		      stage ('artifact'){
 		            steps{
 			          archive 'target\\ webapp.war'
