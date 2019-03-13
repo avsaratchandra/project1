@@ -15,7 +15,7 @@ pipeline{
 				}
 		      stage ('artifact'){
 		            steps{
-			          archive 'target\* .war'
+			          archive 'target\\ webapp.war'
 				  }
 				  }
 	              stage('deploy'){
