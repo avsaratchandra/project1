@@ -6,8 +6,7 @@ pipeline{
 		       git credentialsId: 'c3194e7d-08ac-4e5d-82ee-bc3e10afec06', url: 'https://github.com/avsaratchandra/project1.git'
                      MVNHOME = tool 'Maven-3'
 		     } 
-		     
-		       }
+		     }
 		       stage ('build stage'){
 		           steps{
 			        
