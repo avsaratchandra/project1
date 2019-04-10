@@ -19,12 +19,12 @@ pipeline{
 			          archive 'target\\ webapp.war'
 				  }
 				  }
-	              #stage('deploy'){
-		        #     steps{
-			    #      sh 'copy  C:\\.jenkins\\workspace\\project1\\target\\webapp.war E:\\tools\\apache-tomcat-7.0.90\\webapps'
+	              stage('deploy'){
+		             steps{
+			          sh 'copy  C:\\.jenkins\\workspace\\project1\\target\\webapp.war E:\\tools\\apache-tomcat-7.0.90\\webapps'
 		        
-				#}
-                               # }  
+				}
+                                }  
                                 }
 				}
 		       
