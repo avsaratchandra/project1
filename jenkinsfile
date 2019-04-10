@@ -21,7 +21,7 @@ pipeline{
 				  }
 	              stage('deploy'){
 		             steps{
-			          bat  'copy  C:\\Jenkins\\workspace\\demo1\\target\\webapp.war E:\\tools\\apache-tomcat-7.0.90\\webapps'
+			          bat  'copy  C:\\Jenkins\\workspace\\demo1\\target\\webapp.war E:\\tools\\apache-tomcat-7.0.90\\jwa'
 		        
 				}
                                 }  
