@@ -10,7 +10,7 @@ pipeline{
 		       stage ('build stage'){
 		           steps{
 			        
-				sh 'mvn clean install '
+				bat 'mvn clean install '
 				}
 				}
 		       
@@ -21,7 +21,7 @@ pipeline{
 				  }
 	              stage('deploy'){
 		             steps{
-			          sh 'copy  C:\\.jenkins\\workspace\\project1\\target\\webapp.war E:\\tools\\apache-tomcat-7.0.90\\webapps'
+			          bat  'copy  C:\\.jenkins\\workspace\\project1\\target\\webapp.war E:\\tools\\apache-tomcat-7.0.90\\webapps'
 		        
 				}
                                 }  
